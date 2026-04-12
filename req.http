@@ -1,0 +1,30 @@
+### to read all employees
+GET http://localhost:6000/empApi/emps
+
+### create new employee
+POST http://localhost:6000/empApi/emps
+Content-Type: application/json
+
+{
+  "EMPName":"Harika",
+  "email":"harika@gmail.com",
+  "mobile":9877543210,
+  "designation":"developer",
+  "companyName":"Google"
+}
+
+### update employee details
+PUT http://localhost:6000/empApi/emps/69ca2a6f0dcc45d3ce999cd8
+Content-Type: application/json
+
+{
+  "EMPName":"ManiTrisha",
+  "email":"manii@gmail.com",
+  "mobile":9876543210,
+  "designation":"full-stack developer",
+  "companyName":"Infosys"
+}
+
+### delete employee by id
+DELETE http://localhost:6000/empApi/emps/69cb56b24b2cc2ec5227836d
+
